@@ -19,14 +19,13 @@ body {
     font-family: 'lato', sans-serif;
 }
 
-
 /* Header */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
-    width:100%;
+    width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
 
 }
@@ -34,22 +33,37 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
-
-h1 {
-    font-family: 'oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 
-/* Main content */
-main {
-    background-color: lightblue;
-    /* Make main content take up any surplus space to push footer down */
-    flex: 1 0 auto;
+    h1 {
+        font-family: 'oswald', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #252525;
+    }
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
 }
 
-/* Footer */
-footer {
-    background-color: orange;
+#menu > li {
+    margin-bottom: 1em
 }
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+    /* Main content */
+    main {
+        background-color: lightblue;
+        /* Make main content take up any surplus space to push footer down */
+        flex: 1 0 auto;
+    }
+
+    /* Footer */
+    footer {
+        background-color: orange;
+    }
