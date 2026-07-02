@@ -27,7 +27,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -35,12 +37,12 @@ header a {
     color: inherit;
 }
 
-    h1 {
-        font-family: 'oswald', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: #252525;
-    }
+h1 {
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
 
 #menu {
     font-size: 110%;
@@ -48,7 +50,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em
 }
 
@@ -58,22 +60,37 @@ header a {
 
 /*Nav bar styles with dropdown toggles*/
 nav {
-    position:absolute;
-    background-color: #ffffff; 
+    position: absolute;
+    background-color: #ffffff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%;
 }
-    /* Main content */
-    main {
-        background-color: lightblue;
-        /* Make main content take up any surplus space to push footer down */
-        flex: 1 0 auto;
-    }
 
-    /* Footer */
-    footer {
-        background-color: orange;
-    }
+/*nav toggle*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    background-color: lightblue;
+    /* Make main content take up any surplus space to push footer down */
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: orange;
+}
