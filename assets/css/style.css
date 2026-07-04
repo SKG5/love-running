@@ -178,6 +178,14 @@ list-style-type: none;
     font-size: 160%;
 }
 
+/*Media query:large or landscape phones (576px and up)*/
+@media screen and (min-width: 576px) {
+    #photos {column-count: 2;
+    column-gap: 0;
+    }
+}
+
+
 /*Media query:tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
     /*header*/
@@ -244,13 +252,18 @@ list-style-type: none;
     align-self: flex-end;
 }
 
-
+#photos {
+    column-count: 3;
 }
 
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+
+    #photos {
+    column-count: 4;
+}
 }
 
 #reasons {
@@ -294,6 +307,8 @@ hr {
     align-items: center;
     justify-content: center;
 }
+
+
 
 @media screen and (min-width: 1200px) {
     #benefits {
